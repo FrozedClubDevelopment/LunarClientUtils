@@ -1,0 +1,6 @@
+name: LunarClientUtils
+version: ${project.version}
+main: club.frozed.lunarutils.LunarClientUtils
+authors: [Elb1to, FrozedClubDevelopment]
+description: Utils plugin made with LunarClient's Official API
+website: www.frozed.club
