@@ -36,6 +36,8 @@ public class CommandFramework implements CommandExecutor {
 
 	/**
 	 * Initializes the command framework and sets up the command maps
+	 *
+	 * @param plugin the plugin
 	 */
 	public CommandFramework(Plugin plugin) {
 		this.plugin = plugin;
@@ -61,15 +63,14 @@ public class CommandFramework implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, org.bukkit.command.Command cmd, String label, String[] args) {
 		return handleCommand(sender, cmd, label, args);
 	}
-	
+
 	/**
 	 * Handles commands. Used in the onCommand method in your JavaPlugin class
-	 * 
-	 * @param sender The {@link CommandSender} parsed from
-	 *            onCommand
-	 * @param cmd The {@link org.bukkit.command.Command} parsed from onCommand
-	 * @param label The label parsed from onCommand
-	 * @param args The arguments parsed from onCommand
+	 *
+	 * @param sender The {@link CommandSender} parsed from            onCommand
+	 * @param cmd    The {@link org.bukkit.command.Command} parsed from onCommand
+	 * @param label  The label parsed from onCommand
+	 * @param args   The arguments parsed from onCommand
 	 * @return Always returns true for simplicity's sake in onCommand
 	 */
 	public boolean handleCommand(CommandSender sender, org.bukkit.command.Command cmd, String label, String[] args) {
@@ -165,6 +166,14 @@ public class CommandFramework implements CommandExecutor {
 		Bukkit.getServer().getHelpMap().addTopic(topic);
 	}
 
+	/**
+	 * Register command.
+	 *
+	 * @param command the command
+	 * @param label   the label
+	 * @param m       the m
+	 * @param obj     the obj
+	 */
 	public void registerCommand(Command command, String label, Method m, Object obj) {
 		commandMap.put(label.toLowerCase(), new AbstractMap.SimpleEntry<Method, Object>(m, obj));
 		commandMap.put(this.plugin.getName() + ':' + label.toLowerCase(), new AbstractMap.SimpleEntry<Method, Object>(m, obj));
@@ -181,7 +190,14 @@ public class CommandFramework implements CommandExecutor {
 		}
 	}
 
-		public void registerCompleter(String label, Method m, Object obj) {
+	/**
+	 * Register completer.
+	 *
+	 * @param label the label
+	 * @param m     the m
+	 * @param obj   the obj
+	 */
+	public void registerCompleter(String label, Method m, Object obj) {
 		String cmdLabel = label.split("\\.")[0].toLowerCase();
 		if (map.getCommand(cmdLabel) == null) {
 			org.bukkit.command.Command command = new BukkitCommand(cmdLabel, this, plugin);

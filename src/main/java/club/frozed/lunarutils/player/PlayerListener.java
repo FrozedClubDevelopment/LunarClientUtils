@@ -20,6 +20,11 @@ public class PlayerListener implements Listener {
 
     private final LunarClientAPI lunarClientAPI = LunarClientAPI.getInstance();
 
+    /**
+     * On player join.
+     *
+     * @param event the event
+     */
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();

@@ -16,14 +16,20 @@ import java.util.Map.Entry;
  * Command Framework - BukkitCompleter <br>
  * An implementation of the TabCompleter class allowing for multiple tab
  * completers per command
- * 
+ *
  * @author minnymin3
- * 
  */
 public class BukkitCompleter implements TabCompleter {
 
 	private Map<String, Entry<Method, Object>> completers = new HashMap<String, Entry<Method, Object>>();
 
+	/**
+	 * Add completer.
+	 *
+	 * @param label the label
+	 * @param m     the m
+	 * @param obj   the obj
+	 */
 	public void addCompleter(String label, Method m, Object obj) {
 		completers.put(label, new AbstractMap.SimpleEntry<Method, Object>(m, obj));
 	}

@@ -7,9 +7,8 @@ import org.bukkit.entity.Player;
  * Command Framework - CommandArgs <br>
  * This class is passed to the command methods and contains various utilities as
  * well as the command info.
- * 
+ *
  * @author minnymin3
- * 
  */
 public class CommandArgs {
 
@@ -18,6 +17,15 @@ public class CommandArgs {
 	private String label;
 	private String[] args;
 
+	/**
+	 * Instantiates a new Command args.
+	 *
+	 * @param sender     the sender
+	 * @param command    the command
+	 * @param label      the label
+	 * @param args       the args
+	 * @param subCommand the sub command
+	 */
 	protected CommandArgs(CommandSender sender, org.bukkit.command.Command command, String label, String[] args,
 			int subCommand) {
 		String[] modArgs = new String[args.length - subCommand];
@@ -39,8 +47,8 @@ public class CommandArgs {
 
 	/**
 	 * Gets the command sender
-	 * 
-	 * @return
+	 *
+	 * @return sender sender
 	 */
 	public CommandSender getSender() {
 		return sender;
@@ -48,8 +56,8 @@ public class CommandArgs {
 
 	/**
 	 * Gets the original command object
-	 * 
-	 * @return
+	 *
+	 * @return command command
 	 */
 	public org.bukkit.command.Command getCommand() {
 		return command;
@@ -57,7 +65,7 @@ public class CommandArgs {
 
 	/**
 	 * Gets the label including sub command labels of this command
-	 * 
+	 *
 	 * @return Something like 'test.subcommand'
 	 */
 	public String getLabel() {
@@ -68,15 +76,16 @@ public class CommandArgs {
 	 * Gets all the arguments after the command's label. ie. if the command
 	 * label was test.subcommand and the arguments were subcommand foo foo, it
 	 * would only return 'foo foo' because 'subcommand' is part of the command
-	 * 
-	 * @return
+	 *
+	 * @return string [ ]
 	 */
 	public String[] getArgs() {
 		return args;
 	}
-	
+
 	/**
 	 * Gets the argument at the specified index
+	 *
 	 * @param index The index to get
 	 * @return The string at the specified index
 	 */
@@ -86,16 +95,27 @@ public class CommandArgs {
 
 	/**
 	 * Returns the length of the command arguments
+	 *
 	 * @return int length of args
 	 */
 	public int length() {
 		return args.length;
 	}
-	
+
+	/**
+	 * Is player boolean.
+	 *
+	 * @return the boolean
+	 */
 	public boolean isPlayer() {
 		return sender instanceof Player;
 	}
 
+	/**
+	 * Gets player.
+	 *
+	 * @return the player
+	 */
 	public Player getPlayer() {
 		if (sender instanceof Player) {
 			return (Player) sender;

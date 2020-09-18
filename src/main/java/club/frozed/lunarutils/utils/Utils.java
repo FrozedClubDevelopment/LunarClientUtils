@@ -13,6 +13,11 @@ import java.util.List;
  */
 public class Utils {
 
+    /**
+     * Gets online players.
+     *
+     * @return the online players
+     */
     public static List<Player> getOnlinePlayers() {
         List<Player> players = new ArrayList<>();
         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
@@ -21,6 +26,12 @@ public class Utils {
         return players;
     }
 
+    /**
+     * Gets ping.
+     *
+     * @param player the player
+     * @return the ping
+     */
     public static int getPing(Player player) {
         try {
             String version = Bukkit.getServer().getClass().getPackage().getName().substring(23);

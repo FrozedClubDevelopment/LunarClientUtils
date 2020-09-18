@@ -13,21 +13,24 @@ import java.util.List;
  * Command Framework - BukkitCommand <br>
  * An implementation of Bukkit's Command class allowing for registering of
  * commands without plugin.yml
- * 
+ *
  * @author minnymin3
- * 
  */
 public class BukkitCommand extends org.bukkit.command.Command {
 
 	private final Plugin owningPlugin;
 	private CommandExecutor executor;
+	/**
+	 * The Completer.
+	 */
 	protected BukkitCompleter completer;
 
 	/**
 	 * A slimmed down PluginCommand
-	 * 
-	 * @param name
-	 * @param owner
+	 *
+	 * @param label    the label
+	 * @param executor the executor
+	 * @param owner    the owner
 	 */
 	protected BukkitCommand(String label, CommandExecutor executor, Plugin owner) {
 		super(label);

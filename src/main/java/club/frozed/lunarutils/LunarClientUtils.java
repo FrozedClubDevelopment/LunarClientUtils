@@ -8,9 +8,15 @@ import lombok.Setter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * The type Lunar client utils.
+ */
 @Getter @Setter
 public final class LunarClientUtils extends JavaPlugin {
 
+    /**
+     * The constant instance.
+     */
     @Getter public static LunarClientUtils instance;
     private CommandFramework commandFramework;
 
