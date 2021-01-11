@@ -26,11 +26,6 @@ public class PlayerListener implements Listener {
 
     private final LunarClientAPI lunarClientAPI = LunarClientAPI.getInstance();
 
-    /**
-     * On player join.
-     *
-     * @param event the event
-     */
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
@@ -69,8 +64,14 @@ public class PlayerListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = Bukkit.getPlayer(event.getEntity().getUniqueId());
         if (event.getEntity() == player) {
-            BackCommand.playerLocation.put(player, player.getLocation());
+            BackCommand.playerLocation.put(player.getUniqueId(), player.getLocation());
         }
-        player.sendMessage(CC.translate("&cYou died, your last death location has been saved! &7&oUse /back to go back to it."));
+
+        player.sendMessage(CC.CHAT_BAR);
+        player.sendMessage(CC.translate("&4&lTe moriste pete XdxdxDXDXdXDxDXd."));
+        player.sendMessage(CC.translate(" "));
+        player.sendMessage(CC.translate("&cYou can only use the &o/back &ccommand &lONCE."));
+        player.sendMessage(CC.translate("&cThis will teleport you back to your death location."));
+        player.sendMessage(CC.CHAT_BAR);
     }
 }
