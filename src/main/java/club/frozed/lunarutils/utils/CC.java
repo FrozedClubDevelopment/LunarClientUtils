@@ -5,22 +5,10 @@ import org.bukkit.ChatColor;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * The type Cc.
- */
 public class CC {
 
-    /**
-     * The constant MENU_BAR.
-     */
     public static final String MENU_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + "------------------------";
-    /**
-     * The constant CHAT_BAR.
-     */
     public static final String CHAT_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + "------------------------------------------------";
-    /**
-     * The constant SB_BAR.
-     */
     public static final String SB_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + "----------------------";
 
     /**

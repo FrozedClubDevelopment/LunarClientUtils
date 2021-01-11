@@ -1,15 +1,21 @@
 package club.frozed.lunarutils.player;
 
+import club.frozed.lunarutils.commands.BackCommand;
 import club.frozed.lunarutils.utils.CC;
 import com.lunarclient.bukkitapi.LunarClientAPI;
 import com.lunarclient.bukkitapi.object.LCNotification;
 import com.lunarclient.bukkitapi.object.TitleType;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.time.Duration;
+import java.util.UUID;
 
 /**
  * Created by Elb1to
@@ -57,5 +63,14 @@ public class PlayerListener implements Listener {
                 player.sendMessage(CC.translate("&8[&bLunarClient&8] &7You have received all Staff-Modules. "));
             }
         }
+    }
+
+    @EventHandler
+    public void onPlayerDeath(PlayerDeathEvent event) {
+        Player player = Bukkit.getPlayer(event.getEntity().getUniqueId());
+        if (event.getEntity() == player) {
+            BackCommand.playerLocation.put(player, player.getLocation());
+        }
+        player.sendMessage(CC.translate("&cYou died, your last death location has been saved! &7&oUse /back to go back to it."));
     }
 }
