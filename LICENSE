@@ -1,21 +1,66 @@
-MIT License
+OS Frozed Club Development License 1.0
+Version 1.0, 30 November 2023
+https://frozed.club/license/
 
-Copyright (c) 2020 Elb1to
+BY DOWNLOADING, CLONING, FORKING AND/OR USING THIS PROJECT YOU AGREE TO THE LICENSE
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Definition. This license, referred to as the "OS Frozed Club Development License,"
+    governs the use, redistribution, and modification of the associated software.
+    By downloading, cloning, forking, and/or using this project, users agree to
+    adhere to the terms outlined in this license.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Redistribution. You may reproduce and distribute copies of this,
+    use in source and binary forms, with or without modification, are 
+    permitted provided that each of the following conditions are met:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+    (a) Redistributions of source code must retain the 
+        above copyright notice, this list of conditions and 
+        the following disclaimer.
+
+    (b) Redistributions in binary form must reproduce the 
+        above copyright notice, this list of conditions and 
+        the following disclaimer in the documentation and/or 
+        other materials provided with the distribution.
+
+    (c) Neither the name of Frozed Club Development contributors nor the names 
+        of the original author of this (Elb1to) may be used to endorse
+        or promote products derived from this software
+        without specific prior written permission.
+
+    (d) The user, identified as 'iusemeteor,' is expressly prohibited
+        from utilizing, redistributing, promoting, and/or extracting
+        code from this repository under all circumstances.
+
+    (e) An entity wishing to redistribute in binary form or 
+        include this software in their product without 
+        redistribution of this software's source code with the 
+        product must also submit to these conditions where 
+        applicable:
+            • For every (1) unit distributed, one (1) or more
+                persons affiliated with the entity must provide
+                full original crediting to Elb1to and/or Frozed
+                Club Development.
+
+    (f) In order to acquire permission to redistribute this software
+        you must ask for permission from Elb1to and be granted it
+        before redistributing any code from this repository.
+
+3. Trademarks. This License does not grant permission to use the trade
+    names, trademarks, service marks, or product names of the Licensor,
+    except as required for reasonable and customary use in describing the
+    origin of the Work and reproducing the content of the LICENSE file.
+
+Copyright © 2023 Elb1to
+Licensed under the OS Frozed Club Development License, Version 1.0 (the "License");
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANYTHEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGE. FROZED CLUB DEVELOPMENT ACCEPTS NO LIABILITY FOR ANY EXPENSES SUSTAINED IN 
+THE ACT OF FULFILLING ANY OF THE ABOVE TERMS AND CONDITIONS, ACCIDENTAL OR OTHERWISE.
